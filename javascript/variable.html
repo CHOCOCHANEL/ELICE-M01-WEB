@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+</head>
+<body>
+    <h2>변수</h2>
+    <script>
+        let a = 1;
+        let b = 2;
+        console.log(a+b);
+        a = 3;
+        console.log(a+b);
+    </script>
+
+    <h2>변수는 왜 쓰는가</h2>
+    <script>
+        console.log(10000*0.1); // 10000:가격, 0.1:부가가치세
+        /* 더 좋은 방법은
+        변수를 쓰는 것이다. */
+        let price = 10000;
+        let vat = 0.1;
+        let tax = price * vat;
+        console.log(tax);
+        // 변수는 데이터에 이름을 붙인 것입니다.
+    </script>
+</body>
+</html>
