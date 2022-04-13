@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#choco {
+    color: white;
+    background: linear-gradient(white, #483D8B, black);
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+
+    /* Flex */
+    display: flex;
+    align-items: center; /*vertical*/
+    justify-content: center; /*horizontal*/
+}
