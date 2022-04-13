@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dot Dot Dot</title>
+</head>
+<body>
+    JavaScript is 
+    <span id="Dot" onclick="
+
+        let state = document.querySelector('#Chunk').style.visibility;
+
+        if (state === 'hidden'){
+            console.log('hidden');
+            document.querySelector('#Chunk').style.visibility = 'visible';
+            this.value = 'visible';
+            this.style.backgroundColor = 'gray';
+        }
+
+        else if (state === 'visible') {
+            document.querySelector('#Chunk').style.visibility = 'hidden';
+            this.value = 'hidden';
+            this.style.backgroundColor = 'white';
+        }
+        
+    ">...</span> 
+    
+    <span id="Chunk" style="visibility:hidden;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, et possimus molestiae tenetur voluptatibus repudiandae animi, at ratione modi, doloremque reprehenderit! Earum praesentium perspiciatis molestias dignissimos repellat facilis debitis nostrum fugit, ab, iste odio quia eveniet cumque blanditiis dolores accusantium laborum. In quia quos veritatis ipsam earum, quisquam error amet, eos dignissimos itaque nemo autem distinctio aspernatur aut commodi eveniet cumque sunt laboriosam. Recusandae illum consequuntur nisi sint! Labore corrupti placeat perferendis animi libero. Ratione, quam vitae dolorum sit deserunt vel cum! Ex sunt cum illo iste officiis enim esse, porro quasi magni reprehenderit aut laborum. Officia cumque itaque ipsum deleniti facilis rem nam eos mollitia, tenetur eius totam maiores debitis voluptatibus error sit ducimus doloribus ratione, voluptatum ut? Est maiores voluptatem eligendi, iure cum nihil quia eaque excepturi incidunt dicta aliquam nisi aperiam exercitationem minus molestiae nostrum repellendus facere, quos, adipisci quibusdam sequi sapiente ipsa magnam! Debitis dicta incidunt, aliquam voluptatem tenetur vero eius, eos, velit quos illo dolor quia asperiores. Cupiditate amet ullam blanditiis tenetur expedita doloribus ad quia porro officia sapiente nesciunt tempora unde, necessitatibus perferendis fuga nobis vitae neque labore consectetur aliquam repellat quam distinctio. Similique voluptatibus et eaque aliquid quidem laborum iure dolorum qui optio!</span>
+</body>
+</html>

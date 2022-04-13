@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WEB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/button.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="index.html">WEB</a>
+        </h1>
+        <ul>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JavaScript</a></li>
+        </ul>
+    </header>
+
+    <main id="main" role="main">
+        <article>
+            <h2>Welcome</h2>
+            <p>Hello, WEB</p>
+            <div class="frame">
+                <input class="custom-btn btn-11" type="button" value="night" onclick="
+                    if (this.value === 'night') {
+                        speechSynthesis.speak(new SpeechSynthesisUtterance('야간?'));
+                        alert('야간 모드로 전환합니다.');
+                        document.querySelector('body').style.backgroundColor = 'black';
+                        document.querySelector('body').style.color = 'white';
+                        this.value = 'day';
+                    }
+
+                    else if (this.value === 'day') {
+                        speechSynthesis.speak(new SpeechSynthesisUtterance('주간?'));
+                        alert('주간 모드로 전환합니다.');
+                        document.querySelector('body').style.backgroundColor = 'white';
+                        document.querySelector('body').style.color = 'black';
+                        this.value = 'night';
+                    }
+                ">
+            </div>
+            
+        </article>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
