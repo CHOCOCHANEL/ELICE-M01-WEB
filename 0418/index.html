@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let topics = [
+            {id: 1, title: 'HTML', body: 'HTML is ...'},
+            {id: 2, title: 'CSS', body: 'CSS is ...'},
+            {id: 3, title: 'JavaScript', body: 'JavaScript is ...'}
+        ];
+    </script>
+</head>
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    <nav>
+        <ol>
+            
+        </ol>
+    </nav>
+
+    <h2>Welcome</h2>
+    <p>Hello, WEB</p>
+
+    <script>
+        function nav() {
+            let navTag = '';
+            let element = document.querySelector('nav ol')
+            let i = 0;
+            for (let topic of topics) {
+                navTag += `<li><a href="/read/${topic.id}">${topic.title}</a></li>`
+            }
+            console.log(navTag);
+            element.innerHTML = navTag;
+        }
+
+        nav();
+    </script>
+</body>
+</html>
