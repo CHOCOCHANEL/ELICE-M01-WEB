@@ -20,9 +20,11 @@
             
         </ol>
     </nav>
-
-    <h2>Welcome</h2>
-    <p>Hello, WEB</p>
+    
+    <article>
+        <h2>Welcome</h2>
+        <p>Hello, WEB</p>
+    </article>
 
     <script>
         // function nav() {
@@ -48,13 +50,33 @@
         // }
 
         let nav = () => {
+
+            document.querySelector('h1').addEventListener('click', ()=>{
+                event.preventDefault();
+                document.querySelector('article').innerHTML = '<h2>Welcome</h2> <p>Hello, WEB</p>';
+            });
+
+
             let navTag = '';
             let element = document.querySelector('nav ol')
-            let i = 0;
+
             for (let topic of topics) {
-                navTag += `<li><a href="/read/${topic.id}">${topic.title}</a></li>`
+                navTag += `
+                    <li>
+                        <a href="/read/${topic.id}" id="${topic.id}" onclick="
+                            event.preventDefault();
+                            
+                            for (let topic of topics) {
+                                if (topic.id === Number(event.target.id)) {
+                                    document.querySelector('article').innerHTML = '<h2>${topic.title}</h2> <p>${topic.body}</p>';
+                                    break;
+                                }
+                            }
+
+                        ">${topic.title}
+                        </a>
+                    </li>`;
             }
-            console.log(navTag);
             element.innerHTML = navTag;
         }
 
