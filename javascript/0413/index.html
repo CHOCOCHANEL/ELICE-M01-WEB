@@ -108,6 +108,7 @@
         
         </style>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     </head>
     
     <body>
@@ -136,8 +137,10 @@
                         let a_tags = document.querySelectorAll('a');
 
                         if (this.value === 'night') {
-                            document.querySelector('body').style.backgroundColor = 'black';
-                            document.querySelector('body').style.color = 'white';
+                            // document.querySelector('body').style.backgroundColor = 'black';
+                            $('body').css('background-color', 'black');
+                            // document.querySelector('body').style.color = 'white';
+                            $('body').css('color', 'white');
                             for (let a of a_tags){
                                 a.style.color = 'white';
                             }
@@ -145,8 +148,12 @@
                         }
 
                         else if (this.value === 'day') {
-                            document.querySelector('body').style.backgroundColor = 'white';
-                            document.querySelector('body').style.color = 'black';
+                            // document.querySelector('body').style.backgroundColor = 'white';
+                            // $('body').css('background-color', 'white');
+                            // document.querySelector('body').style.color = 'black';
+                            // $('body').css('color', 'black');
+
+                            $('body').css('background-color', 'white').css('color', 'black');
                             for (let a of a_tags){
                                 a.style.color = 'black';
                             }
