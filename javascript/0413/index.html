@@ -134,13 +134,13 @@
 
                 <input id="button" class="custom-btn btn-5" type="button" value="night"
                     onclick="
-                        let a_tags = document.querySelectorAll('a');
 
                         if (this.value === 'night') {
                             // document.querySelector('body').style.backgroundColor = 'black';
                             $('body').css('background-color', 'black');
                             // document.querySelector('body').style.color = 'white';
                             $('body').css('color', 'white');
+                            let a_tags = document.querySelectorAll('a');
                             for (let a of a_tags){
                                 a.style.color = 'white';
                             }
@@ -154,9 +154,12 @@
                             // $('body').css('color', 'black');
 
                             $('body').css('background-color', 'white').css('color', 'black');
-                            for (let a of a_tags){
-                                a.style.color = 'black';
-                            }
+
+                            // let a_tags = document.querySelectorAll('a');
+                            // for (let a of a_tags){
+                            //     a.style.color = 'black';
+                            // }
+                            $('a').css('color', 'black');
                             this.value = 'night';
                         }
                     "   
