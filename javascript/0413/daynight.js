@@ -16,7 +16,7 @@ function night() {
     // let a_tags = document.querySelectorAll('a');
 }
 
-export function daynight() {
+export function dayNight() {
     let a_tags = document.querySelectorAll('a');
                 
     if (this.value === 'night') {

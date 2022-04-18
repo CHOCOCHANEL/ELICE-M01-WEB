@@ -109,9 +109,14 @@
         </style>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script>
-            import {daynight} from './daynight.js';
-            console.log(daynight);
+        <script type="module">
+            import {dayNight} from './daynight.js';
+            console.log(dayNight);
+
+            function listener(){
+                alert("Listener");
+            }
+            document.querySelector('#dayNightBtn').addEventListener('click', listener);
         </script>
     </head>
     
@@ -136,7 +141,8 @@
                 alt="unsplash"
                 width="300">
 
-                <input id="button" class="custom-btn btn-5" type="button" value="night" onclick="
+                <div>
+                    <input id="dayNightBtn" class="custom-btn btn-5" type="button" value="night" onclick="
 
                     let a_tags = document.querySelectorAll('a');
                 
@@ -168,11 +174,13 @@
                         this.value = 'night';
                     }
                 ">
+                </div>
+                
 
                 <div id="target">toggle</div>
                 <input type="button" value="hide/show" onclick="$('#target').toggle();">
 
-                <div><p>Teachable Machine Image Model</p></div>
+                <!-- <div><p>Teachable Machine Image Model</p></div>
                 <button type="button" class="custom-btn btn-5" onclick="init()">Start</button>
                 <div id="webcam-container"></div>
                 <div id="label-container"></div>
@@ -239,7 +247,7 @@
                         }
                     }
                     init();
-                </script>
+                </script> -->
 
 
 
