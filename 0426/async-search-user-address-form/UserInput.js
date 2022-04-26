@@ -16,9 +16,14 @@ const UserInput = () => {
         value = inputValue;
     }
 
-    function searchAddress(){
-
+    function searchAddress() {
+        return findUserByUsername(value)
+                .then(user => findAddressByUserId(user.id))
+                .catch(e => {
+                    error = e.message;
+                });
     }
+
 
     return { getError, getValue, setValue, searchAddress }
 };
