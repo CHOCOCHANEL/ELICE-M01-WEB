@@ -1,0 +1,20 @@
+{
+  "name": "counter",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Async - Sync Counter",
+  "main": "./0426/async-timer/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CHOCOCHANEL/ELICE-W01-WEB.git"
+  },
+  "author": "elice",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CHOCOCHANEL/ELICE-W01-WEB/issues"
+  },
+  "homepage": "https://github.com/CHOCOCHANEL/ELICE-W01-WEB#readme"
+}
