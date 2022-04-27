@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  /* 테두리를 기준으로 크기를 정합니다. */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 텍스트 마우스 드래그시 색상 변경방법 */
+::selection,
+::-moz-selection {
+  background : #39f;
+  color      : #fff;
+  text-shadow: none;
+}
+
+.container {
+    height: 100vh;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .item {
+    max-width: 350px;
+    text-align: center;
+  }
+
+  img {
+    width: 200px;
+    margin: 5px;
+    text-align: center;
+    transition-duration: 0.4s;
+  }
+
+  img:hover {
+    width: 500px;
+    justify-content: space-around;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+
+  .animation {
+    animation-name: changeWidth;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: 6;
+    animation-direction: alternate;
+  }
+
+  @keyframes changeWidth {
+    from { width: 300px; }
+    to { width: 600px; }
+  }
+
+  #album-container{
+      padding: 20px 0;
+  }
+
+  ol {
+    float: left;
+    padding: 0 1rem 0 0;
+  }
+  
+  li {
+    list-style: none;
+  }
